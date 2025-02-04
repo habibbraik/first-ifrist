@@ -64,10 +64,10 @@ app.use((req, res, next) => {
   next();
 });
 
-const API_SECRET_KEY='test_sk_fOlehda4FykjllG7U1paokv9wgl1OwUzYbFfFyjn'
+const API_SECRET_KEY='live_sk_rhhA4BR3i7ik0IDkGn7TnGdgSFvmPrQUf0dJMNuB'
 const client = new ChargilyClient({
   api_key: API_SECRET_KEY,
-  mode: process.env.MODE_ENV, // Change to 'live' when deploying your application
+  mode: 'live', // Change to 'live' when deploying your application
 
 });
 
